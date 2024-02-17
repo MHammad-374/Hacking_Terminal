@@ -7,14 +7,6 @@ let stArr = [
     'Reading Your Files'
 ];
 let box = document.getElementsByClassName('content-box')[0]
-// let statement = document.getElementsByClassName('statement')[0];
-// stArr.map((i) => { 
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve(console.log(i))
-//         }, 2000);
-//     })   
-// })
 
 let delay = () => {
     btn.style.display = 'none'
@@ -42,6 +34,7 @@ let delay = () => {
                 i++
             }
             else {
+                glitch.pause()
                 let div = document.createElement('div');
                 div.classList.add('statement')
                 div.innerHTML = 'Hehe! You are Hacked Now.'
